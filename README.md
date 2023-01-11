@@ -1,4 +1,4 @@
-
+![Education Image](Images/educationalimage.jpeg)
 # Students Adaptivity Level In Online Education
 
 Author Emily Marsh
@@ -20,6 +20,8 @@ Since the model will be used for identifying feature importance as well as predi
 ## Dataset
 The dataset used for this project is from Kaggle. The information in the dataset was collected using an online and offline survey and was sent to students at varying education levels in Bangledesh. Overall, the dataset contains **1205 survey responses** collected between **Dec 10th 2020 and Feb 5th 2021**. The **14 attributes** for each entry are are **age, gender, level, govt./non-govt. institution, location, IT student or not, educational background, load shedding level, internet quality, class-time, the economic condition of the family, device type used while attending classes, and institution’s own LMS availability**. A table from the paper published about the methodology of this dataset is included below with a detailed description of each feature.
 
+![Feature List](Images/Features Description)
+
 ## Methods
 
 In order to determine which baseline model is appropriate for the dataset, baseline models will be built, then optimized using parameter tuning. Additional ensemble models will also be built and optimized. Once built, the most accurate baseline model will be selected to fine tune and determine feature importance. The F1 score will be used as a determinate of which model is the most accurate. The reason the F1 score will be used is that, as an expression of the precision and recall of the model, the higest F1 score limits the amount of false positives and false negatives. This is important since the project wants a model to correctly assess the adaptivity level of students at all three values (low, moderate & high). 
@@ -28,9 +30,15 @@ In order to determine which baseline model is appropriate for the dataset, basel
 
 Using the visualization, the **XGBoost Optimized Model** has one of the highest AUC values and F1 scores. Most importantly though, the AUC values and F1 scores are the closest between the test and train data. This shows that the optimized XGBoost is the best model to use for accuracy because it avoided overfitting to the train dataset. This will be the model that will be utilized for prediction and determing feature importance.
 
+![Model Performance Metrics](Images/ModelPerformanceMetrics.jpg)
+
+![ConfusionMatrix](Images/XGBoostConfusionMatrix.jpg)
+
 ## Feature Importance As Determined by SHAP Values
 
 Feature importance was determined using **SHAP values**. It is model-agnostic and uses the Shapley values from game theory to estimate how each feature contributes to the prediction. According to the SHAP values the top three most important features were **4G network, being the financial condition of Rich, and zero hours of daily instruction time along with the online education**. However, by using SHAP values more information is given about how these features are important. Unlike the previous two feature importance calculations, the SHAP values provide the average impact on each class level of the dependent variable, Adaptivity Level. This is much more useful for determining feature recommendations that can improve the chances a student will be high adaptivity level versus low or moderate.
+
+![Shap Values](Images/shap.png)
 
 # Conclusion
 
