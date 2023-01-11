@@ -1,4 +1,4 @@
-![Education Image](Images/educationalimage.jpeg)
+![Education Image](Images/edu.jpg)
 # Students Adaptivity Level In Online Education
 
 Author Emily Marsh
@@ -20,7 +20,7 @@ Since the model will be used for identifying feature importance as well as predi
 ## Dataset
 The dataset used for this project is from Kaggle. The information in the dataset was collected using an online and offline survey and was sent to students at varying education levels in Bangledesh. Overall, the dataset contains **1205 survey responses** collected between **Dec 10th 2020 and Feb 5th 2021**. The **14 attributes** for each entry are are **age, gender, level, govt./non-govt. institution, location, IT student or not, educational background, load shedding level, internet quality, class-time, the economic condition of the family, device type used while attending classes, and institution’s own LMS availability**. A table from the paper published about the methodology of this dataset is included below with a detailed description of each feature.
 
-![Feature List](Images/Features Description)
+![Feature List](Images/features.jpg)
 
 ## Methods
 
