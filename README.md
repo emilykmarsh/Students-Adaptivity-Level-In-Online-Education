@@ -32,6 +32,8 @@ Using the visualization, the **XGBoost Optimized Model** has one of the highest 
 
 ![Model Performance Metrics](Images/ModelPerformanceMetrics.jpg)
 
+According to the confusion matrix above, the XGBoost model is predicting true positives for every value of adaptivity level. This supports the conclusion that the AUC value is the highest in the XGBoost model. 
+
 ![ConfusionMatrix](Images/XGBoostConfusionMatrix.jpg)
 
 ## Feature Importance As Determined by SHAP Values
@@ -50,7 +52,17 @@ Using SHAP values from the final model, the following three features were determ
  2. **Rich Financial Condition**
  3. **Zero Hours of Daily Instruction**
 
-All three of these features are recommended to the Department of Education for additional research in order to determine proactive actions that can be taken to increase the probability that students will be at a high adaptivity level with their online education. Of these three features, **Zero Hours of Daily Instruction** is the only feature that has a high impact on low and moderate adaptivity levels and has no affect on high adaptivity levels. Therefore it maybe be the most efficent way to decrease the amount of low and moderate adaptivity students.
+Of these three features, **Zero Hours of Daily Instruction** is the only feature that has a high impact on low and moderate adaptivity levels and has no affect on high adaptivity levels. Therefore it maybe be the most efficent way to decrease the amount of low and moderate adaptivity students.
+
+# Recommendations
+
+Now that a model has been created that can predict the online learning adaptivity level with an accuracy of 91%, this model can be used to proactively identify students that will need the most support to succeed in an online enviorment. **It is recommended that the Department of Education uses census data in order to identify which geographical regions in the USA need the most support and resources.** This way the department can reach out to students who need the most help before they fall behind in their online education. 
+
+It is also recommended that the Department of Education makes the following recommendations for online education programs.
+
+ - **4G Network Should Be Provided To All Students**
+ - **Online Education Must Provide Hours Of Daily Instruction Along With Online Resources**
+
 
 ## Next Steps
 
